@@ -1,0 +1,125 @@
+{
+  "filters": ["All", "Topwear", "Bottomwear", "Footwear", "Accessories"],
+  "products": [
+    {
+      "id": "op_1",
+      "brand": "Street Style",
+      "title": "Loose Fit Cargo Pants with Multiple Pockets",
+      "sellPrice": 1499,
+      "oldPrice": 2499,
+      "image": "/product-1.png",
+      "category": "Bottomwear",
+      "link": "/product/cargo-pants.html"
+    },
+    {
+      "id": "op_2",
+      "brand": "Dukaan Originals",
+      "title": "Chunky Sneakers with OrthoLite Insole",
+      "sellPrice": 2999,
+      "oldPrice": 4999,
+      "image": "/product-2.png",
+      "category": "Footwear",
+      "link": "/product/sneakers.html"
+    },
+    {
+      "id": "op_3",
+      "brand": "Urban Style",
+      "title": "Minimalist Matte Black Chronograph Watch",
+      "sellPrice": 1999,
+      "oldPrice": 3499,
+      "image": "/product-3.png",
+      "category": "Accessories",
+      "link": "/product/watch.html"
+    },
+    {
+      "id": "op_4",
+      "brand": "ActiveWear",
+      "title": "Breathable Gym Muscle Tee",
+      "sellPrice": 599,
+      "oldPrice": 999,
+      "image": "/product-4.png",
+      "category": "Topwear",
+      "link": "/product/muscle-tee.html"
+    },
+    {
+      "id": "op_5",
+      "brand": "Winter Collection",
+      "title": "Ribbed Knit Beanie Cap",
+      "sellPrice": 399,
+      "oldPrice": 699,
+      "image": "/product-5.png",
+      "category": "Accessories",
+      "link": "/product/beanie.html"
+    },
+    {
+      "id": "op_6",
+      "brand": "Street Style",
+      "title": "Faded Wash Denim Jacket",
+      "sellPrice": 2199,
+      "oldPrice": 3599,
+      "image": "/product-6.png",
+      "category": "Topwear",
+      "link": "/product/denim-jacket.html"
+    },
+    {
+      "id": "op_7",
+      "brand": "Dukaan Originals",
+      "title": "Classic Wayfarer Polarized Sunglasses",
+      "sellPrice": 899,
+      "oldPrice": 1499,
+      "image": "/product-7.png",
+      "category": "Accessories",
+      "link": "/product/sunglasses.html"
+    },
+    {
+      "id": "op_8",
+      "brand": "Urban Style",
+      "title": "Slim Fit Chino Trousers",
+      "sellPrice": 1199,
+      "oldPrice": 1899,
+      "image": "/product-8.png",
+      "category": "Bottomwear",
+      "link": "/product/chinos.html"
+    },
+    {
+      "id": "op_9",
+      "brand": "ActiveWear",
+      "title": "High-Ankle Sports Training Shoes",
+      "sellPrice": 3499,
+      "oldPrice": 5999,
+      "image": "/product-9.png",
+      "category": "Footwear",
+      "link": "/product/sports-shoes.html"
+    },
+    {
+      "id": "op_10",
+      "brand": "Dukaan Originals",
+      "title": "Plain White Crew Neck T-Shirt",
+      "sellPrice": 499,
+      "oldPrice": 799,
+      "image": "/product-10.png",
+      "category": "Topwear",
+      "link": "/product/white-tshirt.html"
+    },
+    {
+      "id": "op_11",
+      "brand": "Urban Style",
+      "title": "Premium Leather Chelsea Boots",
+      "sellPrice": 3599,
+      "oldPrice": 5999,
+      "image": "/product-11.png",
+      "category": "Footwear",
+      "link": "/product/chelsea-boots.html"
+    },
+    {
+      "id": "op_12",
+      "brand": "Street Style",
+      "title": "Relaxed Fit Corduroy Trousers",
+      "sellPrice": 1299,
+      "oldPrice": 2199,
+      "image": "/product-12.png",
+      "category": "Bottomwear",
+      "link": "/product/corduroy-trousers.html"
+    }
+  ]
+}

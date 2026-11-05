@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new-ecom</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <header
+      id="animated-navbar"
+      class="sticky top-0 z-50 w-full bg-[#faf9f5]/70 backdrop-blur-lg border-b border-gray-200"
+    >
+      <div class="hidden md:block px-6 py-4">
+        <div class="flex items-center justify-between gap-8">
+          <!-- brand name -->
+          <a
+            href="/"
+            id="desktop-brand-name"
+            class="motion-logo text-3xl font-black text-[#f77f00] tracking-tight"
+          ></a>
+
+          <!-- search -->
+          <div class="motion-search flex-1 max-w-2xl relative">
+            <input
+              type="text"
+              placeholder="Search for products..."
+              class="w-full bg-white border border-gray-300 rounded-full py-2.5 pl-5 pr-12 focus:outline-none focus:border-[#f77f00] focus:ring-1 focus:ring-[#f77f00] transition-all"
+            />
+            <button
+              class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-[#f77f00]"
+            >
+              <i class="ri-search-line text-xl motion-search-icon"></i>
+            </button>
+          </div>
+
+          <!-- icons -->
+          <div class="motion-icons flex items-center gap-6">
+            <!-- wishlist icon -->
+            <button
+              class="relative text-gray-700 hover:text-[#f77f00] transition-colors"
+            >
+              <i class="ri-heart-3-fill text-2xl"></i>
+
+              <span
+                class="wishlist-count hidden absolute -top-1.5 -right-2 bg-[#f77f00] text-white text-[10px] font-bold h-4 w-4 rounded-full items-center justify-center"
+                >0</span
+              >
+            </button>
+
+            <!-- cart icon -->
+            <button
+              class="relative text-gray-700 hover:text-[#f77f00] transition-colors"
+            >
+              <i class="ri-shopping-bag-2-line text-2xl"></i>
+
+              <span
+                class="cart-count hidden absolute -top-1.5 -right-2 bg-[#f77f00] text-white text-[10px] font-bold h-4 w-4 rounded-full items-center justify-center"
+                >0</span
+              >
+            </button>
+            <!-- separator -->
+            <div class="h-8 w-px bg-gray-300"></div>
+
+            <!-- user info -->
+            <div class="flex items-center gap-3 cursor-pointer">
+              <!-- avatar image -->
+              <img
+                src=""
+                alt="profile"
+                id="user-avatar"
+                class="h-10 w-10 rounded-full border-2 border-gray-200 object-cover"
+              />
+
+              <!-- user name -->
+              <span id="user-name" class="font-medium text-gray-800"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hidden -->
+      <div
+        class="hidden md:flex px-6 py-3 border-t border-gray-100 items-center justify-between text-sm font-medium"
+      >
+        <div
+          class="flex items-center gap-6 motion-menu"
+          id="desktop-categories"
+        ></div>
+        <div
+          class="flex items-center gap-6 text-gray-600 motion-menu"
+          id="desktop-pages"
+        ></div>
+      </div>
+
+      <div class="md:hidden px-4 py-3 flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <a
+            href="/"
+            id="mobile-brand-name"
+            class="text-2xl font-black text-[#f77f00] tracking-tight motion-logo"
+          ></a>
+
+          <button class="relative text-gray-700">
+            <i class="ri-heart-3-fill text-2xl motion-icon"></i>
+
+            <span
+              class="wishlist-count hidden absolute -top-1.5 -right-2 bg-[#f77f00] text-white text-[10px] font-bold h-4 w-4 rounded-full items-center justify-center"
+              >0</span
+            >
+          </button>
+        </div>
+        <div class="relative w-full motion-search">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="w-full bg-white border border-gray-300 rounded-full py-3 pl-4 pr-10 focus:outline-none focus:border-[#f77f00]"
+          />
+
+          <button
+            class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500"
+          >
+            <i class="ri-search-line text-xl motion-search-icon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full" id="main-content">
+      <!-- Hero Section -->
+      <section class="flex flex-col md:flex-row gap-4 px-4 md:px-6 pt-6">
+        <div
+          class="motion-hero-slider w-full md:w-3/4 lg:w-4/5 relative overflow-hidden rounded-3xl h-[250px] md:h-[450px] shadow-sm group order-1"
+        >
+          <div
+            id="hero-slider"
+            class="flex w-full h-full overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth"
+          ></div>
+          <div
+            id="slider-dots"
+            class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10"
+          ></div>
+        </div>
+
+        <div class="md:hidden w-full mt-2 order-2 motion-swipable-mobile">
+          <div
+            id="mobile-secondary-banners"
+            class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-3 pb-2"
+          ></div>
+        </div>
+
+        <div
+          class="motion-hero-video w-full md:w-1/4 lg:w-1/5 relative rounded-3xl overflow-hidden h-[400px] md:h-[450px] shadow-sm order-3"
+        >
+          <a href="#" id="hero-video-link" class="block w-full h-full group">
+            <video
+              id="hero-video"
+              autoplay
+              loop
+              muted
+              playsinline
+              class="w-full h-full object-cover"
+            ></video>
+            <div
+              class="absolute bottom-4 right-4 h-10 w-10 glass-btn z-10 shadow-lg motion-hero-icon"
+            >
+              <i class="ri-arrow-right-up-line text-xl"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section
+        id="desktop-secondary-banners"
+        class="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-4 px-6 mt-6 pb-10 motion-secondary-banners"
+      ></section>
+      <!-- Category Section -->
+      <section class="mt-12 px-4 md:px-6 mb-10 motion-category-section">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+        >
+          <h2
+            class="text-2xl md:text-3xl text-gray-900 tracking-tight text-center md:text-left font-medium w-full md:w-auto"
+          >
+            Browse by Category
+          </h2>
+          <div
+            id="category-filters"
+            class="flex overflow-x-auto no-scrollbar gap-2 w-full md:w-auto pb-1 motion-category-filters"
+          ></div>
+        </div>
+        <div
+          id="category-cards-container"
+          class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4 mt-6 pb-4 motion-category-cards"
+        ></div>
+      </section>
+
+      <hr class="border-gray-200 mx-4 md:px-6 my-10" />
+
+      <!-- New Collection Section -->
+      <section class="px-4 md:px-6 motion-collection-section">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-5 mb-8"
+        >
+          <!-- heading -->
+          <h2
+            class="text-2xl md:text-3xl font-medium text-gray-900 tracking-tight text-center md:text-left w-full md:w-auto"
+          >
+            Our New Collections
+          </h2>
+
+          <!-- filter button -->
+          <div
+            id="collection-filters"
+            class="flex overflow-x-auto no-scrollbar gap-2 w-full md:w-auto pb-1 motion-collection-filters"
+          ></div>
+        </div>
+        <!-- cards -->
+        <div
+          id="collection-grid"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 md:gap-6 motion-collection-grid"
+        ></div>
+      </section>
+      <!-- Our Products Section -->
+      <section class="px-4 md:px-6 mb-16 motion-products-section mt-10">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-5 mb-8"
+        >
+          <!-- heading -->
+          <h2
+            class="text-2xl md:text-3xl font-medium text-gray-900 tracking-tight text-center md:text-left w-full md:w-auto"
+          >
+            Our Products
+          </h2>
+
+          <!-- filter buttons -->
+          <div
+            id="products-filters"
+            class="flex overflow-x-auto no-scrollbar gap-2 w-full md:w-auto pb-1 motion-products-filters"
+          ></div>
+        </div>
+
+        <!-- cards -->
+        <div
+          id="products-grid"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 md:gap-6 motion-products-grid"
+        ></div>
+      </section>
+
+      <hr class="border-gray-200 mx-4 md:mx-6 my-10" />
+
+      <!-- Newsletter Section -->
+      <section class="px-4 md:px-6 mb-16">
+        <div
+          id="newsletter-container"
+          class="relative overflow-hidden rounded-3xl h-[400px] flex flex-col items-center justify-center text-center shadow-lg group motion-newsletter-container"
+        >
+          <!-- background video -->
+          <video
+            id="newsletter-video"
+            autoplay
+            loop
+            muted
+            playsinline
+            class="absolute top-0 left-0 w-full h-[150%] object-cover -z-20 transition-transform ease-linear will-change-transform"
+          ></video>
+
+          <div class="absolute inset-0 bg-black/50 -z-10"></div>
+          <!-- heading -->
+          <h2
+            id="newsletter-heading"
+            class="text-3xl md:text-4xl font-medium tracking-tight mb-4 text-white relative z-10 px-4 motion-newsletter-text"
+          ></h2>
+
+          <!-- subheading -->
+          <p
+            id="newsletter-subheading"
+            class="text-white/90 text-sm md:text-base mb-8 max-w-lg relative z-10 font-medium px-4 motion-newsletter-text"
+          ></p>
+          <!-- form -->
+          <form
+            onsubmit="
+              event.preventDefault();
+              alert('Thank you for subscribing!');
+            "
+            class="w-full max-w-md relative z-10 px-4 motion-newsletter-form"
+          >
+            <div class="relative flex items-center w-full">
+              <!-- input -->
+              <input
+                type="email"
+                id="newsletter-input"
+                required
+                class="w-full pl-6 pr-[140px] py-4 rounded-full text-gray-900 bg-white border-2 border-transparent focus:outline-none focus:ring-4 focus:ring-[#f77f00]/50 shadow-2xl placeholder-gray-500 font-medium transition-all cursor-text"
+              />
+              <!-- button -->
+              <button
+                type="submit"
+                class="absolute right-2 top-2 bottom-2 bg-[#f77f00] hover:bg-[#e06d00] text-white px-6 rounded-full font-bold transition-all whitespace-nowrap shadow-sm active:scale-95 flex items-center justify-center gap-2 text-sm motion-newsletter-btn"
+              >
+                <span id="newsletter-btn-text"></span>
+                <i class="ri-send-plane-fill motion-icon"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <hr class="border-gray-200 mx-4 md:mx-6 my-10" />
+    </main>
+
+    <!-- Footer Section -->
+    <footer
+      class="pt-16 pb-28 md:pb-10 w-full relative z-40 border-t border-gray-100 motion-footer-section"
+    >
+      <div class="max-w-[1400px] mx-auto px-4 md:px-6">
+        <div
+          id="footer-primary"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12 motion-footer-grid"
+        ></div>
+
+        <div
+          id="footer-map-container"
+          class="w-full rounded-2xl overflow-hidden h-40 md:h-48 mb-8 shadow-sm relative group grayscale transition-all duration-700 hover:grayscale-0 motion-footer-map"
+        ></div>
+
+        <hr class="border-gray-200 mb-6" />
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium"
+        >
+          <p id="footer-copyright" class="text-gray-500"></p>
+
+          <div class="flex items-center gap-1.5">
+            <span class="text-gray-500">Build with</span>
+
+            <i
+              class="ri-heart-3-fill text-red-500 text-lg animate-pulse motion-heart"
+            ></i>
+
+            <span class="text-gray-500">by</span>
+
+            <a
+              href="https://www.instagram.com/code.with.aarzoo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-[#f77f00] font-bold hover:text-[#e06d00] transition-colors relative group ml-1 motion-creator-link"
+            >
+              Code With Masud
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#f77f00] transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Floating Nav -->
+    <nav
+      class="md:hidden fixed bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 rounded-2xl z-50 px-6 py-3 flex justify-between items-center text-gray-500"
+    >
+      <!-- Home -->
+      <a href="/" class="flex flex-col items-center gap-1 text-[#f77f00]">
+        <i class="ri-home-fill text-xl"></i>
+        <span class="text-[10px] font-medium">Home</span>
+      </a>
+
+      <!-- Category -->
+      <a
+        href="/all-categories.html"
+        class="flex flex-col items-center gap-1 hover:text-[#f77f00] transition-colors"
+      >
+        <i class="ri-menu-4-fill text-xl"></i>
+        <span class="text-[10px] font-medium">Category</span>
+      </a>
+
+      <!-- Profile -->
+      <a
+        href="/profile.html"
+        class="flex flex-col items-center gap-1 hover:text-[#f77f00] transition-colors"
+      >
+        <i class="ri-user-line text-xl"></i>
+        <span class="text-[10px] font-medium">Profile</span>
+      </a>
+      <!-- Cart -->
+      <a
+        href="/cart.html"
+        class="flex flex-col items-center gap-1 relative hover:text-[#f77f00] transition-colors"
+      >
+        <div class="relative">
+          <i class="ri-shopping-bag-2-line text-xl"></i>
+
+          <span
+            class="cart-count hidden absolute -top-2 -right-2 bg-[#f77f00] text-white text-[9px] font-bold h-3.5 w-3.5 rounded-full items-center justify-center"
+            >0</span
+          >
+        </div>
+
+        <span class="text-[10px] font-medium">Cart</span>
+      </a>
+    </nav>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

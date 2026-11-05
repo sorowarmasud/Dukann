@@ -1,0 +1,44 @@
+{
+  "testimonials": [
+    {
+      "id": "t1",
+      "name": "Rahul Sharma",
+      "time": "2 days ago",
+      "review": "The quality of the oversized t-shirts is phenomenal. Fits perfectly and feels premium. Highly recommend!",
+      "rating": 5,
+      "image": "assets/customer-1.jpg"
+    },
+    {
+      "id": "t2",
+      "name": "Priya Verma",
+      "time": "1 week ago",
+      "review": "Fast delivery and the packaging was so aesthetic. The winter jacket is exactly as shown in the pictures.",
+      "rating": 5,
+      "image": "assets/customer-2.jpg"
+    },
+    {
+      "id": "t3",
+      "name": "Amit Kumar",
+      "time": "3 days ago",
+      "review": "Loved the cargo pants! The material is durable and very comfortable for daily wear.",
+      "rating": 4,
+      "image": "assets/customer-3.jpg"
+    },
+    {
+      "id": "t4",
+      "name": "Neha Singh",
+      "time": "2 weeks ago",
+      "review": "Customer support was very helpful when I needed to exchange a size. The new sneakers are gorgeous.",
+      "rating": 5,
+      "image": "assets/customer-4.jpg"
+    },
+    {
+      "id": "t5",
+      "name": "Vikas Patel",
+      "time": "5 days ago",
+      "review": "Value for money. The minimal watch I bought looks way more expensive than it actually is.",
+      "rating": 5,
+      "image": "assets/customer-5.jpg"
+    }
+  ]
+}

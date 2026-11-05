@@ -1,0 +1,29 @@
+{
+  "about": {
+    "description": "Dukaan is your ultimate destination for premium quality fashion and lifestyle products. Upgrade your everyday style with our exclusively curated collections.",
+    "email": "support@dukaan.com",
+    "phone": "+91 98765 43210"
+  },
+  "socials": [
+    { "icon": "ri-facebook-circle-fill", "link": "https://facebook.com" },
+    { "icon": "ri-instagram-line", "link": "https://instagram.com" },
+    { "icon": "ri-twitter-x-line", "link": "https://twitter.com" },
+    { "icon": "ri-youtube-fill", "link": "https://youtube.com" }
+  ],
+  "categories": [
+    { "name": "Men's Casuals", "link": "/category/men.html" },
+    { "name": "Women's Partywear", "link": "/category/women.html" },
+    { "name": "Kids Collection", "link": "/category/kids.html" },
+    { "name": "Footwear", "link": "/category/footwear.html" },
+    { "name": "Accessories", "link": "/category/accessories.html" }
+  ],
+  "legal": [
+    { "name": "Privacy Policy", "link": "/privacy.html" },
+    { "name": "Terms of Service", "link": "/terms.html" },
+    { "name": "Return & Refund", "link": "/returns.html" },
+    { "name": "Shipping Info", "link": "/shipping.html" },
+    { "name": "Contact Us", "link": "/contact.html" }
+  ],
+  "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0610714771233!2d77.21855671508248!3d28.62793138241946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xc46188cbcc014546!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1689000000000!5m2!1sen!2sin",
+  "copyright": "© 2026 Dukaan. All rights reserved."
+}

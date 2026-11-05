@@ -1,0 +1,47 @@
+{
+  "filters": ["All", "Men", "Women", "Children", "Accessories"],
+  "items": [
+    {
+      "id": 1,
+      "title": "Men's Casuals",
+      "category": "Men",
+      "image": "/category-1.png",
+      "link": "/category/men-casual.html"
+    },
+    {
+      "id": 2,
+      "title": "Party Wear",
+      "category": "Women",
+      "image": "/category-2.png",
+      "link": "/category/women-party.html"
+    },
+    {
+      "id": 3,
+      "title": "Kids Toys",
+      "category": "Children",
+      "image": "/category-3.png",
+      "link": "/category/kids-toys.html"
+    },
+    {
+      "id": 4,
+      "title": "Formal Suits",
+      "category": "Men",
+      "image": "/category-4.png",
+      "link": "/category/men-formal.html"
+    },
+    {
+      "id": 5,
+      "title": "Watches",
+      "category": "Accessories",
+      "image": "/category-5.png",
+      "link": "/category/watches.html"
+    },
+    {
+      "id": 6,
+      "title": "Winter Wear",
+      "category": "Women",
+      "image": "/category-6.png",
+      "link": "/category/women-winter.html"
+    }
+  ]
+}

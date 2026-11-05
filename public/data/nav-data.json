@@ -1,0 +1,27 @@
+{
+  "brand": {
+    "name": "Dukaan",
+    "logoUrl": "/"
+  },
+  "user": {
+    "name": "Aarzoo",
+    "avatar": "https://ui-avatars.com/api/?name=Aarzoo&background=f77f00&color=fff"
+  },
+  "counts": {
+    "wishlist": 0,
+    "cart": 0
+  },
+  "categories": [
+    { "name": "All Categories", "link": "/all-categories.html" },
+    { "name": "Men", "link": "/category/men.html" },
+    { "name": "Women", "link": "/category/women.html" },
+    { "name": "Children", "link": "/category/children.html" }
+  ],
+  "pages": [
+    { "name": "Contact Us", "link": "/contact-us.html" },
+    {
+      "name": "Store Location",
+      "link": "https://maps.google.com/?q=Howrah,+West+Bengal,+India"
+    }
+  ]
+}

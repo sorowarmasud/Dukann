@@ -1,0 +1,65 @@
+{
+  "filters": ["All", "Shirts", "T-Shirts", "Joggers", "Jackets"],
+  "products": [
+    {
+      "id": "prod_1",
+      "brand": "Dukaan Originals",
+      "title": "Premium Cotton Oversized T-Shirt in Solid Black",
+      "sellPrice": 799,
+      "oldPrice": 1299,
+      "image": "/new-collection-1.png",
+      "category": "T-Shirts",
+      "link": "/product/oversized-tshirt.html"
+    },
+    {
+      "id": "prod_2",
+      "brand": "Urban Style",
+      "title": "Classic Oxford Button-Down Shirt for Men",
+      "sellPrice": 1249,
+      "oldPrice": 1999,
+      "image": "/new-collection-2.png",
+      "category": "Shirts",
+      "link": "/product/oxford-shirt.html"
+    },
+    {
+      "id": "prod_3",
+      "brand": "ActiveWear",
+      "title": "Slim Fit Comfort Stretch Joggers",
+      "sellPrice": 999,
+      "oldPrice": 1599,
+      "image": "/new-collection-3.png",
+      "category": "Joggers",
+      "link": "/product/joggers.html"
+    },
+    {
+      "id": "prod_4",
+      "brand": "Winter Collection",
+      "title": "Lightweight Puffer Jacket with Hood",
+      "sellPrice": 2499,
+      "oldPrice": 3999,
+      "image": "/new-collection-4.png",
+      "category": "Jackets",
+      "link": "/product/puffer-jacket.html"
+    },
+    {
+      "id": "prod_5",
+      "brand": "Dukaan Originals",
+      "title": "Graphic Printed Casual Drop Shoulder T-Shirt",
+      "sellPrice": 699,
+      "oldPrice": 1199,
+      "image": "/new-collection-5.png",
+      "category": "T-Shirts",
+      "link": "/product/graphic-tshirt.html"
+    },
+    {
+      "id": "prod_6",
+      "brand": "Urban Style",
+      "title": "Linen Blend Mandarin Collar Shirt",
+      "sellPrice": 1149,
+      "oldPrice": 1899,
+      "image": "/new-collection-6.png",
+      "category": "Shirts",
+      "link": "/product/linen-shirt.html"
+    }
+  ]
+}
