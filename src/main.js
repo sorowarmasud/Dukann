@@ -394,7 +394,7 @@ async function initOurProducts() {
           : "bg-white text-gray-600 border-gray-200 hover:border-[#f77f00] hover:text-[#f77f00]";
 
         filtersHTML += `
-                    <button class="product-filter-btn px-4 py-1.5 rounded-full border text-xs md:text-sm font-medium transition-all duration-300 shrink-0 ${activeClasses}" data-filter="${filter}">${filter}</button>
+            <button class="product-filter-btn px-4 py-1.5 rounded-full border text-xs md:text-sm font-medium transition-all duration-300 shrink-0 ${activeClasses}" data-filter="${filter}">${filter}</button>
                 `;
       });
       filtersContainer.innerHTML = filtersHTML;
@@ -434,7 +434,7 @@ async function initOurProducts() {
         productsHTML += `
                     <a href="${product.link}" class="group block cursor-pointer">
                         <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-gray-100 mb-3 shadow-sm">
-                            <img src="${product.image}" alt="${product.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                            <img src="${import.meta.env.BASE_URL}${product.image.startsWith('/') ? product.image.slice(1) : product.image}" alt="${product.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                             <button onclick="toggleWishlist(event, '${product.id}')" class="absolute top-3 right-3 h-8 w-8 bg-white/30 backdrop-blur-md border border-white/40 rounded-full flex items-center justify-center shadow-md z-10 transition-transform active:scale-90 glass-btn">
                                 <i class="${heartClass} text-lg transition-colors duration-300"></i>
                             </button>
@@ -466,15 +466,16 @@ async function initOurProducts() {
     console.error("Products Error:", error);
   }
 }
-
 async function initNewsletter() {
   try {
-   const response = await fetch(`${import.meta.env.BASE_URL}data/newsletter.json`);
+    const response = await fetch(`${import.meta.env.BASE_URL}data/newsletter.json`);
     const data = await response.json();
     const video = document.getElementById("newsletter-video");
     const container = document.getElementById("newsletter-container");
 
-    if (video) video.src = data.backgroundVideo;
+    if (video) {
+      video.src = `${import.meta.env.BASE_URL}${data.backgroundVideo.startsWith('/') ? data.backgroundVideo.slice(1) : data.backgroundVideo}`;
+    }
 
     document.getElementById("newsletter-heading").textContent = data.heading;
     document.getElementById("newsletter-subheading").textContent =
