@@ -2,58 +2,58 @@
   "primarySlider": [
     {
       "id": 1,
-      "image": "/hero-banner-1.png",
-      "link": "/sale.html",
+      "image": "hero-banner-1.png",
+      "link": "sale.html",
       "alt": "Summer Sale"
     },
     {
       "id": 2,
-      "image": "/hero-banner-2.png",
-      "link": "/new-arrivals.html",
+      "image": "hero-banner-2.png",
+      "link": "new-arrivals.html",
       "alt": "New Arrivals"
     },
     {
       "id": 3,
-      "image": "/hero-banner-3.png",
-      "link": "/exclusive.html",
+      "image": "hero-banner-3.png",
+      "link": "exclusive.html",
       "alt": "Exclusive Collection"
     },
     {
       "id": 4,
-      "image": "/hero-banner-4.png",
-      "link": "/shop.html",
+      "image": "hero-banner-4.png",
+      "link": "shop.html",
       "alt": "Summer Collection"
     }
   ],
   "heroVideo": {
-    "videoUrl": "/hero-video.mp4",
-    "link": "/trending.html",
+    "videoUrl": "hero-video.mp4",
+    "link": "trending.html",
     "alt": "Trending Product Reel"
   },
   "secondaryBanners": [
     {
       "id": 1,
-      "image": "/hero-sub-banner-1.png",
+      "image": "hero-sub-banner-1.png",
       "title": "Mega Sale",
-      "link": "/mega-sale.html"
+      "link": "mega-sale.html"
     },
     {
       "id": 2,
-      "image": "/hero-sub-banner-2.png",
+      "image": "hero-sub-banner-2.png",
       "title": "BOGO Offers",
-      "link": "/bogo.html"
+      "link": "bogo.html"
     },
     {
       "id": 3,
-      "image": "/hero-sub-banner-3.png",
+      "image": "hero-sub-banner-3.png",
       "title": "Free Delivery",
-      "link": "/free-shipping.html"
+      "link": "free-shipping.html"
     },
     {
       "id": 4,
-      "image": "/hero-sub-banner-4.png",
+      "image": "hero-sub-banner-4.png",
       "title": "Limited Stock",
-      "link": "/limited.html"
+      "link": "limited.html"
     }
   ]
 }
