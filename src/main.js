@@ -193,7 +193,7 @@ async function initHeroSection() {
 
       mobileHTML += `
         <a href="${banner.link}" class="relative rounded-2xl overflow-hidden h-[130px] w-[85%] shrink-0 snap-center shadow-sm block bg-gray-100">
-            <img src="${banner.image}" alt="Banner" class="w-full h-full object-cover" loading="lazy">
+           <img src="${import.meta.env.BASE_URL}${banner.image.startsWith('/') ? banner.image.slice(1) : banner.image}" alt="Banner" class="w-full h-full object-cover" loading="lazy">
           <div class="absolute bottom-3 right-3 h-7 w-7 glass-btn z-10">
     <i class="ri-arrow-right-up-line text-xs"></i>
 </div>    
