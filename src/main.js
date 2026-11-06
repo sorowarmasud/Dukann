@@ -254,19 +254,16 @@ async function initCategoriesSection() {
         return;
       }
 
-      filteredItems.forEach((item) => {
-        cardsHTML += `
-            <a href="${item.link}" class="group relative rounded-2xl overflow-hidden h-[130px] md:h-[160px] w-[85%] md:w-[280px] shrink-0 snap-center shadow-sm block cursor-pointer bg-gray-100">
-                <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+     filteredItems.forEach((item) => {
+    cardsHTML += `
+        <a href="${item.link}" class="group relative rounded-2xl overflow-hidden h-[130px] md:h-[160px] w-[85%] md:w-[280px] shrink-0 snap-center shadow-sm block cursor-pointer bg-gray-100">
+            <!-- এখানে এই কোডটি বসাবেন -->
+            <img src="${import.meta.env.BASE_URL}${item.image.startsWith('/') ? item.image.slice(1) : item.image}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
 
-                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
-
-                <div class="absolute bottom-3 left-3 bg-white/30 backdrop-blur-md border border-white/40 text-white px-4 py-1.5 rounded-full text-sm font-bold shadow-lg">
-                    ${item.title}
-                </div>
-            </a>
-        `;
-      });
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+            ...
+    `;
+});
       cardsContainer.style.opacity = "0";
       setTimeout(() => {
         cardsContainer.innerHTML = cardsHTML;
