@@ -129,7 +129,8 @@ async function initHeroSection() {
     data.primarySlider.forEach((slide, index) => {
       sliderHTML += `
                 <a href="${slide.link}" class="min-w-full h-full block relative cursor-pointer snap-center shrink-0">
-                <img src="${slide.image}" alt="${slide.alt}" class="w-full h-full object-cover" loading="lazy">
+                
+                <img src="${import.meta.env.BASE_URL}${slide.image.startsWith('/') ? slide.image.slice(1) : slide.image}" alt="${slide.alt}" class="w-full h-full object-cover" loading="lazy">
                 </a>
             `;
       dotsHTML += `
@@ -183,7 +184,7 @@ async function initHeroSection() {
     data.secondaryBanners.forEach((banner) => {
       desktopHTML += `
         <a href="${banner.link}" class="group relative rounded-2xl overflow-hidden h-[160px] shadow-sm block cursor-pointer bg-gray-100">
-            <img src="${banner.image}" alt="Banner" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+           <img src="${import.meta.env.BASE_URL}${banner.image.startsWith('/') ? banner.image.slice(1) : banner.image}" alt="Banner" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
             <div class="absolute bottom-4 right-4 h-8 w-8 glass-btn z-10 shadow-lg">
                 <i class="ri-arrow-right-up-line text-sm"></i>
             </div>
