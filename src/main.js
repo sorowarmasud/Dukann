@@ -340,27 +340,7 @@ async function initNewCollection() {
           : "ri-heart-3-fill text-white";
 
       
-          productsHTML += `
-    <a href="${product.link}" class="group block cursor-pointer">
-        <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-gray-100 mb-3 shadow-sm">
-           
-            <img src="${import.meta.env.BASE_URL}${product.image.startsWith('/') ? product.image.slice(1) : product.image}" alt="${product.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
-            
-            <button onclick="toggleWishlist(event, '${product.id}')" class="absolute top-3 right-3 h-8 w-8 bg-white/30 backdrop-blur-md border border-white/40 rounded-full flex items-center justify-center shadow-md z-10 transition-transform active:scale-90 glass-btn">
-                <i class="${heartClass} text-lg transition-colors duration-300"></i>
-            </button>
-        </div>
-        <div class="flex flex-col px-1">
-            <span class="text-[10px] md:text-xs text-gray-500 font-semibold tracking-wider uppercase mb-1">${product.brand}</span>
-            <h3 class="text-xs md:text-sm font-medium text-gray-800 leading-snug line-clamp-2 mb-1.5 group-hover:text-[#f77f00] transition-colors">${product.title}</h3>
-            <div class="flex items-center gap-2">
-                <span class="text-sm md:text-base font-bold text-[#f77f00]">₹${product.sellPrice}</span>
-                <span class="text-[10px] md:text-xs text-gray-400 line-through">₹${product.oldPrice}</span>
-            </div>
-        </div>
-    </a>
-`;
-
+        
       gridContainer.style.opacity = "0";
       setTimeout(() => {
         gridContainer.innerHTML = productsHTML;
