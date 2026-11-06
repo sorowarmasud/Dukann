@@ -73,7 +73,7 @@ window.toggleWishlist = (event, productId) => {
 
 async function initNavbar() {
   try {
-    const response = await fetch("/data/nav-data.json");
+   const response = await fetch(`${import.meta.env.BASE_URL}data/nav-data.json`);
     const data = await response.json();
 
     document.getElementById("desktop-brand-name").textContent = data.brand.name;
@@ -119,7 +119,7 @@ async function initNavbar() {
 
 async function initHeroSection() {
   try {
-    const response = await fetch("/data/hero-data.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}data/hero-data.json`);
     const data = await response.json();
     const sliderContainer = document.getElementById("hero-slider");
     const dotsContainer = document.getElementById("slider-dots");
@@ -212,7 +212,7 @@ async function initHeroSection() {
 
 async function initCategoriesSection() {
   try {
-    const response = await fetch("/data/categories-data.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}data/categories-data.json`);
     const data = await response.json();
     const filterContainer = document.getElementById("category-filters");
     const cardsContainer = document.getElementById("category-cards-container");
@@ -285,7 +285,7 @@ async function initCategoriesSection() {
 
 async function initNewCollection() {
   try {
-    const response = await fetch("/data/new-collection.json");
+  const response = await fetch(`${import.meta.env.BASE_URL}data/new-collection.json`);
 
     const data = await response.json();
     const filtersContainer = document.getElementById("collection-filters");
@@ -381,7 +381,7 @@ async function initNewCollection() {
 
 async function initOurProducts() {
   try {
-    const response = await fetch("/data/our-products.json");
+    const response = await fetch(`${import.meta.env.BASE_URL}data/our-products.json`);
     const data = await response.json();
     const filtersContainer = document.getElementById("products-filters");
     const gridContainer = document.getElementById("products-grid");
@@ -474,7 +474,7 @@ async function initOurProducts() {
 
 async function initNewsletter() {
   try {
-    const response = await fetch("/data/newsletter.json");
+   const response = await fetch(`${import.meta.env.BASE_URL}data/newsletter.json`);
     const data = await response.json();
     const video = document.getElementById("newsletter-video");
     const container = document.getElementById("newsletter-container");
