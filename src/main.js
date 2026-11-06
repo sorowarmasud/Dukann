@@ -169,7 +169,8 @@ async function initHeroSection() {
     const videoElement = document.getElementById("hero-video");
     const videoLinkElement = document.getElementById("hero-video-link");
     if (videoElement && videoLinkElement) {
-      videoElement.src = data.heroVideo.videoUrl;
+      const vUrl = data.heroVideo.videoUrl;
+      videoElement.src = `${import.meta.env.BASE_URL}${vUrl.startsWith('/') ? vUrl.slice(1) : vUrl}`;
       videoLinkElement.href = data.heroVideo.link;
     }
     const desktopBannerContainer = document.getElementById(
